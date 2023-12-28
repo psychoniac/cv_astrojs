@@ -1,0 +1,37 @@
+---
+// Component Imports
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '/styles/global.css';
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+const pageTitle = 'Mes projets';
+---
+
+<html lang='en'>
+    <head>
+        <meta charset='utf-8' />
+        <meta
+            name='viewport'
+            content='width=device-width'
+        />
+        <title>{pageTitle}</title>
+        <style>
+            html,
+            body {
+                font-family: system-ui;
+                margin: 0;
+            }
+            body {
+                padding: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="containerPage">
+        <Header />
+        <h1>{pageTitle}</h1>
+        <Footer />
+        </div>
+    </body>
+</html>
